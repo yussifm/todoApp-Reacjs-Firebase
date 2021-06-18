@@ -4,7 +4,7 @@
 }
 .todo__input{
     text-align: center;
-    margin: 10px;
+    margin: 10%;
 }
 
 .item__list{
@@ -19,6 +19,6 @@
 .todo{
 border-radius: 10px;
   box-shadow: 2px 3px 3px black;
- 
+ margin: 10%;
  
 }
