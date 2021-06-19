@@ -14,9 +14,10 @@ const Todo = () => {
 		FDb.collection("todos")
 			.orderBy("timestamp", "desc")
 			.onSnapshot((snapshot) => {
-				console.log(snapshot.docs.map((doc) => ({ id: doc.id, todo: doc.data().todo })));
-				setTodo(snapshot.docs.map((doc) => ({ id: doc.id, todo: doc.data().todo }))
-				)})
+				setTodo(
+					snapshot.docs.map((doc) => ({ id: doc.id, todo: doc.data().todo })),
+				);
+			});
 	}, []);
 
 	const HandleSubmit = (e) => {
@@ -69,7 +70,7 @@ const Todo = () => {
 			</div>
 			<div className="item__list">
 				{TodoItem.map((item) => {
-					return <ListCom Item={item} key={item.id}/>;
+					return <ListCom Item={item} key={item.id} />;
 				})}
 			</div>
 		</>

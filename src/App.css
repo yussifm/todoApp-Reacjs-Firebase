@@ -1,24 +1,30 @@
-.header{
-  text-align: center;
-  text-decoration: underline;
+.header {
+	text-align: center;
+	text-decoration: underline;
 }
-.todo__input{
-    text-align: center;
-    margin: 10%;
-}
-
-.item__list{
-  display: flex;
-  flex-direction:column;
-  width: 70%;
-  margin: 0 auto;
-
-  
+.todo__input {
+	text-align: center;
+	margin: 10%;
 }
 
-.todo{
-border-radius: 10px;
-  box-shadow: 2px 3px 3px black;
- margin: 10%;
- 
+.item__list {
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.todo {
+	border-radius: 10px;
+	box-shadow: 2px 3px 3px black;
+	margin: 10%;
+}
+
+@media screen and (max-width: 600px) {
+	.item__list {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		margin: 5px auto;
+	}
 }
