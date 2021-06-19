@@ -44,7 +44,7 @@ const ListCom = ({ Item }) => {
 					/>
 				</ListItemSecondaryAction>
 				{open && (
-					<form>
+					<form style={{TextAlign: "center", margin: "3%", padding: "2%"}}>
 						<FormControl>
 							<InputLabel>📝 Edit a todo</InputLabel>
 							<Input
@@ -56,7 +56,7 @@ const ListCom = ({ Item }) => {
 							/>
 							<Button
 								color="primary"
-								variant="outlined"
+								variant="contained"
 								type="submit"
 								className="btn btn-add"
 								onClick={HandleEdit}
